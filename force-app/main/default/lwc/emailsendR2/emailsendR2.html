@@ -1,3 +1,20 @@
 <template>
-    
+    <lightning-card title="Email send to user">
+    <lightning-input type="text" label="Enter email"></lightning-input>
+    </lightning-card>
+    <lightning-card title="Upload files">
+        <lightning-input type="file" accept=".pdf,.csv" label="Upload files" onchange={handlefilechange}>
+        </lightning-input>
+        <template if:true={filename}>
+            <p> File Name : {filename}</p>
+        </template>
+        <template if:true={uploadpro}>
+            <p> Upload Progress : {uploadpro}</p>
+        </template>
+        <lightning-button 
+          variant="base"
+          label="upload" 
+          onclick={handleupload} 
+        ></lightning-button>
+    </lightning-card>
 </template>
