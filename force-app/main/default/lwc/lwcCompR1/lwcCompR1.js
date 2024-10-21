@@ -5,6 +5,6 @@ export default class LwcCompR1 extends LightningElement {
     @track Accountdata=[];
     error='';
     async function () {
-        
+        const data =await accrecords;
     }
 }
