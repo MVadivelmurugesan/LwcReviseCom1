@@ -1,20 +1,22 @@
 import { LightningElement ,track} from 'lwc';
-import uploadfile from '@salesforce/apex/EmailSendlwc.uploadfile';
+import uploadfile1 from '@salesforce/apex/EmailSendlwc.uploadfile';
 export default class EmailsendR2 extends LightningElement {
 
     @track filename='';
      disabled=true;
      uploadpro=0;
      err=null;
-    @track file=[];
+    @track file=null;
 
     handlefilechange(event){
-        const files=event.target.file;
+        const files=event.target.files;
         console.log('upload file 1==>',files);
-        if (file > 0) {
+        if (files.length > 0) {
             this.file=files[0];
             this.filename=this.file.name;
             this.disabled=false
+        }else{
+            this.disabled=true;
         }
     }
     async handleupload(){
@@ -22,7 +24,7 @@ export default class EmailsendR2 extends LightningElement {
         this.uploadpro=0;
         if(this.file){
             try {
-                const result=await uploadfile(this.file);
+                const result=await this.uploadfile(this.file);
                 this.uploadpro=100;
                 console.log('result 1==>',result);
             } catch (error) {
@@ -36,7 +38,7 @@ export default class EmailsendR2 extends LightningElement {
             const reader=new FileReader();
             reader.onload=()=>{
                 const filecontent=reader.result;
-                uploadfile({filename:this.filename,filecontent:filecontent})
+                uploadfile1({filename:this.filename,filecontent:filecontent})
                 .then(result => resolve(result))
                 .catch(error => reject(error))
             }
