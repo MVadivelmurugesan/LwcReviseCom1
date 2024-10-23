@@ -1,13 +1,17 @@
 <template>
+    <lightning-card >
+      <table class="slds-table slds-table_cell-buffer slds-table_header-hidden" >
+        <thead class="slds-assistive-text">
+                <th>Name</th>
+                <th>Amount</th>
+        </thead>
+      </table>
+    </lightning-card>
     <lightning-card title="Data Table">
         <lightning-datatable
           key-field="id"
           data={data}
           columns={columns}
         ></lightning-datatable>
-        <lightning-output-field 
-          field-name="Name"
-          variant="standard"
-        ></lightning-output-field>
     </lightning-card>
 </template>

@@ -1,0 +1,14 @@
+<template>
+   <lightning-layout >
+        <lightning-layout-item size="8">
+            <lightning-input type="text" variant="standard" name="name" label="Enter Name" placeholder="type here..." onchange={handlechange}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="8">
+            <lightning-button 
+            variant="base"
+            label="Button Label" 
+            onclick={handleSearch} 
+        ></lightning-button>
+        </lightning-layout-item>
+   </lightning-layout>
+</template>
