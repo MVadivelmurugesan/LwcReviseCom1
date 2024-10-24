@@ -1,0 +1,19 @@
+<template>
+    <div class="hero-sec">
+        <div class="hero-cont">
+            <h1 class="hero-tit">Lwc Meals Project</h1>
+            <div class="slds-grid slds-wrap slds-grid_align-center">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_8-of-12">
+                    <lightning-input type="search" variant="label-hidden" name="name" label="Enter search irem" placeholder="type here..." onchange={handlesearchitem}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                    <lightning-button 
+                      variant="destructive"
+                      label="Search Recipes" 
+                      onclick={clickhandler} 
+                    ></lightning-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
