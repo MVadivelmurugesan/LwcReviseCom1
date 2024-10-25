@@ -2,12 +2,18 @@
     <template if:true={checkmeal}>
         <lightning-card>
             <div class="slds-grid slds-wrap">
-                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_8-of-12">
-                    <span>1</span>
+                <template for:each={mealresult} for:item="meal">
+                <div key={meal.idmeal} class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                    <div class="card">
+                        <img class="img1" src={meal.strMealThumb} alt={meal.strMeal}>
+                        <div class="card-cont">
+                            <h1 class="header">{meal.strMeal}</h1>
+                            <p class="details">{meal.strArea} - {meal.strCategory}</p>
+                        </div>
+                        <button class="recipe-but" onclick={recipehandler}></button>
+                    </div>
                 </div>
-                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_4-of-12">
-                    <span>2</span>
-                </div>
+            </template>
             </div>
         </lightning-card>
     </template>
