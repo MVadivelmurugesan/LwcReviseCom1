@@ -1,18 +1,49 @@
 .card{
-
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0,2);
+    transition: transform 0.2s ease-in-out;
+    font-family: 'Helvectyne Sans',Arial,sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.img1{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 .card-cont{
-
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
 }
 .header{
-
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 .details{
+    color: #f0b169;
+    font-size: 20px;
+    margin-bottom: 20px;
 
 }
 .recipe-but{
+    width: 100%;
+    padding: 12px;
+    background-color: #f0b169;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 
 }
-.img1{
-    
+.recipe-but:hover{
+    background-color: #f0b169;
 }
