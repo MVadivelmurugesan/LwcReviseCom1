@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-grid slds-align_absolute-center">
+        <lightning-button label="Previous" onclick={previousPage} variant="bare" disabled={isPreviousDisabled}></lightning-button>
+
+        <template for:each={pages} for:item="page">
+            <lightning-button
+                key={page.value}
+                label={page.label}
+                value={page.value}
+                variant={page.variant}
+                onclick={handlePageClick}
+            ></lightning-button>
+        </template>
+
+        <lightning-button label="Next" onclick={nextPage} variant="bare" disabled={isNextDisabled}></lightning-button>
+    </div>
+</template>
