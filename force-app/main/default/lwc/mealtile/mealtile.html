@@ -1,8 +1,250 @@
 <template>
-    <div class="card">
-        <img src={meal.strMealThumb} alt={meal.strMeal}>
-        <div class="card-cont">
-            <h1 class="header">{meal.strMeal}</h1>
+    <lightning-card title="Utility Icons Demo">
+        <div class="slds-grid slds-wrap">
+            <!-- Previous page icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:back" size="small"></lightning-icon>
+                <p>Previous page (back)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:left" size="small"></lightning-icon>
+                <p>Previous page (left)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:arrow_left" size="small"></lightning-icon>
+                <p>Previous page (arrow left)</p>
+            </div>
+
+            <!-- Next page icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:forward" size="small"></lightning-icon>
+                <p>Next page (forward)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:right" size="small"></lightning-icon>
+                <p>Next page (right)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:arrow_right" size="small"></lightning-icon>
+                <p>Next page (arrow right)</p>
+            </div>
+
+            <!-- Refresh & Undo/Redo icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:refresh" size="small"></lightning-icon>
+                <p>Refresh</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:undo" size="small"></lightning-icon>
+                <p>Undo</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:redo" size="small"></lightning-icon>
+                <p>Redo</p>
+            </div>
+
+            <!-- Chevron & Skip icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:chevron_left" size="small"></lightning-icon>
+                <p>Chevron left</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:chevron_right" size="small"></lightning-icon>
+                <p>Chevron right</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:skip" size="small"></lightning-icon>
+                <p>Skip</p>
+            </div>
+
+            <!-- More icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:threedots" size="small"></lightning-icon>
+                <p>Ellipsis</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:step_forward" size="small"></lightning-icon>
+                <p>Step forward</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:step_backward" size="small"></lightning-icon>
+                <p>Step backward</p>
+            </div>
+
+            <!-- First/Last page icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:jump_to_left" size="small"></lightning-icon>
+                <p>First page</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:jump_to_right" size="small"></lightning-icon>
+                <p>Last page</p>
+            </div>
+
+            <!-- Indicators -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:record" size="small"></lightning-icon>
+                <p>Current page (record)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:circle" size="small"></lightning-icon>
+                <p>Current page (circle)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:bullet" size="small"></lightning-icon>
+                <p>Page (bullet)</p>
+            </div>
+
+            <!-- Other Navigation Icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:rows" size="small"></lightning-icon>
+                <p>Rows</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:list" size="small"></lightning-icon>
+                <p>Page List</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:number_input" size="small"></lightning-icon>
+                <p>Page Number</p>
+            </div>
+
+            <!-- Expand/Minimize -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:contract" size="small"></lightning-icon>
+                <p>Minimize</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:expand" size="small"></lightning-icon>
+                <p>Expand</p>
+            </div>
+
+            <!-- Steps and Trails -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:steps" size="small"></lightning-icon>
+                <p>Steps</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:trail" size="small"></lightning-icon>
+                <p>Trail</p>
+            </div>
+
+            <!-- Interactive Elements -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:slider" size="small"></lightning-icon>
+                <p>Slider</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:shuffle" size="small"></lightning-icon>
+                <p>Shuffle</p>
+            </div>
+
+            <!-- Toggle Panels -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:toggle_panel_left" size="small"></lightning-icon>
+                <p>Toggle left</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:toggle_panel_right" size="small"></lightning-icon>
+                <p>Toggle right</p>
+            </div>
+
+            <!-- Zoom Icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:zoomout" size="small"></lightning-icon>
+                <p>Zoom out</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:zoomin" size="small"></lightning-icon>
+                <p>Zoom in</p>
+            </div>
         </div>
-    </div>
+        <div class="slds-grid slds-wrap">
+            <!-- Previous page icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:back" size="small"></lightning-icon>
+                <p>Previous page (back)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:left" size="small"></lightning-icon>
+                <p>Previous page (left)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:arrow_left" size="small"></lightning-icon>
+                <p>Previous page (arrow left)</p>
+            </div>
+
+            <!-- Next page icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:forward" size="small"></lightning-icon>
+                <p>Next page (forward)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:right" size="small"></lightning-icon>
+                <p>Next page (right)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:arrow_right" size="small"></lightning-icon>
+                <p>Next page (arrow right)</p>
+            </div>
+
+            <!-- First and Last page icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:jump_to_left" size="small"></lightning-icon>
+                <p>First page</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:jump_to_right" size="small"></lightning-icon>
+                <p>Last page</p>
+            </div>
+
+            <!-- Current page indicators -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:record" size="small"></lightning-icon>
+                <p>Current page (record)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:circle" size="small"></lightning-icon>
+                <p>Current page (circle)</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:bullet" size="small"></lightning-icon>
+                <p>Page (bullet)</p>
+            </div>
+
+            <!-- Pagination controls -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:skip" size="small"></lightning-icon>
+                <p>Skip</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:threedots" size="small"></lightning-icon>
+                <p>Ellipsis</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:steps" size="small"></lightning-icon>
+                <p>Steps</p>
+            </div>
+
+            <!-- Additional pagination icons -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:rows" size="small"></lightning-icon>
+                <p>Rows</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:list" size="small"></lightning-icon>
+                <p>Page List</p>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:number_input" size="small"></lightning-icon>
+                <p>Page Number</p>
+            </div>
+
+            <!-- Pagination trails -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-icon icon-name="utility:trail" size="small"></lightning-icon>
+                <p>Trail</p>
+            </div>
+        </div>
+    </lightning-card>
 </template>

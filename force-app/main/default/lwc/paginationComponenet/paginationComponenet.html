@@ -1,8 +1,18 @@
 <template>
     <div class="slds-grid slds-align_absolute-center">
-        <lightning-button label="Previous" onclick={previousPage} variant="bare" disabled={isPreviousDisabled}></lightning-button>
+        <!-- Previous Button -->
+        <lightning-button-icon
+            icon-name="utility:arrow_left"
+            alternative-text="Previous"
+            onclick={previousPage}
+            disabled={isPreviousDisabled}
+            size="medium"
+            variant="border-filled"
+            class="slds-m-right_xx-small"
+        ></lightning-button-icon>
 
-        <template for:each={pages} for:item="page">
+        <!-- Page Buttons -->
+        <template for:each={visiblePages} for:item="page">
             <lightning-button
                 key={page.value}
                 label={page.label}
@@ -12,10 +22,19 @@
             ></lightning-button>
         </template>
 
-        <lightning-button label="Next" onclick={nextPage} variant="bare" disabled={isNextDisabled}></lightning-button>
+        <!-- Next Button -->
+        <lightning-button-icon
+            icon-name="utility:arrow_right"
+            alternative-text="Next"
+            onclick={nextPage}
+            disabled={isNextDisabled}
+            variant="border-filled"
+            size="medium"
+            class="slds-m-left_xx-small"
+        ></lightning-button-icon>
     </div>
-    <!-- parent component will pass the total pages and current page number -->
-    <!-- <template>
+    <!-- 
+    <template>
     <c-pagination-component
         current-page={currentPage}
         total-pages={totalPages}
