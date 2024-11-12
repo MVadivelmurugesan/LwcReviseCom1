@@ -50,4 +50,9 @@ export default class PaginationComponenet extends LightningElement {
         const pageChangeEvent = new CustomEvent('pagechange', { detail: this.currentPage });
         this.dispatchEvent(pageChangeEvent);
     }
+
+    // handlePageChange(event) { -- parent component will pass the total pages and current page number
+    //     this.currentPage = event.detail;
+    //     this.calculateRange(); // or any other logic needed to update data on page change
+    // }
 }
